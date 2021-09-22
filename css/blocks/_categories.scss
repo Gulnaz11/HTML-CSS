@@ -1,0 +1,72 @@
+.categories-wrap {
+    margin-top: 65px;
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+ 
+.categories-item {
+    text-align: center;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $tablet-break){
+        width: 236px;
+        height: 167px;
+    }
+    }
+
+.categories-item-women{
+    background-image: url("../img/first_category.jpg");    
+    background-size: cover;
+    }
+
+.categories-item-men{     
+    background-image: url("../img/second_category.jpg");  
+    background-size: cover;  
+    }
+
+.categories-item-kids{
+    background-image: url("../img/third_category.jpg");  
+    background-size: cover;  
+    }
+
+.categories-item-acc {
+    position: relative;
+    width:1140px;
+    height: 180px;
+
+    @media (max-width: $tablet-break){
+        width: 735px;
+        height: 116px;
+    }
+}
+
+
+.video {
+    position:absolute;
+    z-index: -100;
+    @media (max-width: $tablet-break){
+        margin-left: 10px;
+        width: 748px;
+        height: auto;
+    }
+}
+
+.categories-item-white {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    }
+
+.categories-item-pink {
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink;
+    }
+    

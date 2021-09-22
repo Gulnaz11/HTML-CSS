@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    }
+
+@media (max-width: 1200px) {
+    .wrap{
+        width: 768px;
+        outline: 1px solid red;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
