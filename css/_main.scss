@@ -16,13 +16,24 @@ img {
 .wrap {
     max-width: 1140px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+box-sizing: content-box;
     }
 
-@media (max-width: 1200px) {
+@media (max-width: $tablet-break) {
     .wrap{
-        width: 768px;
-        outline: 1px solid red;
+        min-width: 768px;
         padding-right: 10px;
         padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: $phone-break) {
+        .wrap{
+            min-width: 375px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }  
     }
 }

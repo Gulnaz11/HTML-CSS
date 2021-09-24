@@ -27,9 +27,12 @@
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-
-    @media (max-width: 1200px) {
-        gap: 0;
+    @media (max-width: 1169px)
+    {
+        justify-content: center;
+    }
+    @media (max-width: $tablet-break) {
+        gap: 18px;
     }
 
 }
@@ -156,3 +159,10 @@
     fill: #fff;
 
     }
+.product-3 {
+    @media (max-width: 1169px)
+    {
+        display: none;
+    }
+    
+}

@@ -1,10 +1,7 @@
 .intro {
     background-color: #F1E4E6;
-
-    @media (max-width: $tablet-break){
-        min-height: 368px;
-    }
  }   
+
 
 .intro-wrap {
     display: flex;
@@ -14,10 +11,20 @@
     min-height: 764px;
     background-repeat: no-repeat;
     background-position: -225px bottom;
+    @media (max-width: 1240px){
+        min-height: 500px;
+        background-size: contain;
+        background-position: -30px bottom;
+    }
     @media (max-width: $tablet-break){
         min-height: 368px;
         background-size: contain;
         background-position: -30px bottom;
+     
+    }
+
+    @media (max-width: $phone-break) {
+        background-image: none;
     }
     }
 
@@ -31,12 +38,19 @@
       font-size: 44px;
       margin-right: 0;
     }
+    @media (max-width: $phone-break) {
+       margin-left: 40px;
+    }
 }
 
 .intro-title-big {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
+    @media (max-width: $phone-break) {
+        font-size: 38px;
+        line-height: 46px;
+    }
    
 }
 
@@ -44,9 +58,22 @@
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
+    @media (max-width: $phone-break) {
+        font-size: 20px;
+        line-height: 24px;
+        
+    }
     }
 
     .intro-title-pink {
     color: $pink;
     }
 
+    .intro-br {
+        height:2px; 
+        visibility:hidden;
+        margin-bottom:-5px;
+        @media (max-width: $phone-break) {
+            margin-bottom:-20px;
+        }
+    }
