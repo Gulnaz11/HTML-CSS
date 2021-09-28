@@ -102,11 +102,15 @@
 
 .registr-link {
     margin-left: 33px;
-
-   
+    @media (max-width: $phone-break) {
+        display: none;
     }
+}
 
 .cart-link {
     margin-left: 33px;
-   
+    @media (max-width: $phone-break) {
+        display: none;
+        padding-right: 5px;
+    }
     }
