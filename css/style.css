@@ -8,11 +8,18 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .wrap {
@@ -505,6 +512,8 @@ img {
 }
 
 .product-card-add {
+  text-decoration: none;
+  list-style: none;
   display: flex;
   align-items: center;
   background-color: transparent;
